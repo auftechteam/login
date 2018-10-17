@@ -1,4 +1,4 @@
-  $(document).ready(function() {
+    $(document).ready(function() {
      $('.input-group.date').datepicker({format: "dd.mm.yyyy"}); 
     $('.input-group.time').datetimepicker({
                     format: 'LT'
@@ -11,121 +11,28 @@
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            name: {
-                validators: {
-                        stringLength: {
-                        min: 2,
-                    },
-                        notEmpty: {
-                        message: 'Please supply your first name'
-                    }
-                }
-            },
-             last_name: {
-                validators: {
-                     stringLength: {
-                        min: 2,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your last name'
-                    }
-                }
-            },
-          
-          typ: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-          
-          datum: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-          zeit: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-          
+         
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your email address'
+                        message: 'Bitte gib Deine Email-Adresse an'
                     },
                     emailAddress: {
-                        message: 'Please supply a valid email address'
+                        message: 'Bitte gib eine richtige Email-Adresse an'
                     }
                 }
             },
-            phone: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your phone number'
-                    },
-                    phone: {
-                        country: 'DE',
-                        message: 'Please supply a vaild phone number with area code'
-                    }
-                }
-            },
-            address: {
-                validators: {
-                     stringLength: {
-                        min: 8,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your street address'
-                    }
-                }
-            },
-            city: {
+            
+            password: {
                 validators: {
                      stringLength: {
                         min: 4,
                     },
                     notEmpty: {
-                        message: 'Please supply your city'
+                        message: 'Bitte gib Dein Passwort ein oder erstell Dir eins in dem Du auf Passwort vergessen gehst'
                     }
                 }
-            },
-            state: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-            zip: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your zip code'
-                    },
-                    zipCode: {
-                        country: 'US',
-                        message: 'Please supply a vaild zip code'
-                    }
-                }
-            },
-            comment: {
-                validators: {
-                      stringLength: {
-                        min: 10,
-                        max: 200,
-                        message:'Please enter at least 10 characters and no more than 200'
-                    },
-                    notEmpty: {
-                        message: 'Please supply a description of your project'
-                    }
-                    }
-                }
+              }
             }
         })
         .on('success.form.bv', function(e) {
@@ -147,3 +54,5 @@
             }, 'json');
         });
 });
+
+
