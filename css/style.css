@@ -20,11 +20,20 @@ body {
   background-color: #f5f5f5;
 }
 
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.register {
+  padding: 15px;
+}
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: auto;
+  margin-right: 70px;
 }
 .form-signin .checkbox {
   font-weight: 400;
