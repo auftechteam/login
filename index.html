@@ -8,25 +8,35 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="text-center">
-    <form class="form-signin" action="/cgi-bin/login.py" method="post" id="contact_form">
-      <img class="mb-4" src="https://s3-eu-west-1.amazonaws.com/lnassetsdev/wp-austehen/wp-content/uploads/2018/08/03124914/cropped-apple-icon-180x180.png" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Logge dich ein</h1>
-      <div class="form-field">
-        <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" name="email" required autofocus>
-      </div>
-      <div class="form-field">
-        <label for="inputPassword" class="sr-only">Passwort</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" name="password" minlength="6" required>
-      </div>
-      <button class="btn btn-lg btn-danger btn-block" type="submit">Einloggen</button>
-	<div class="mt-3 mb-3">
-          <a href="https://jetzt.aufstehen.de/page/user/forgot">Passwort vergessen?</a>
+    <div class="wrapper">
+      <form class="form-signin" action="/cgi-bin/login.py" method="post" id="contact_form">
+        <img class="mb-4" src="https://s3-eu-west-1.amazonaws.com/lnassetsdev/wp-austehen/wp-content/uploads/2018/08/03124914/cropped-apple-icon-180x180.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Logge dich ein</h1>
+        <div class="form-field">
+          <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" name="email" required autofocus>
         </div>
-    </form>
+        <div class="form-field">
+          <label for="inputPassword" class="sr-only">Passwort</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" name="password" minlength="6" required>
+        </div>
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Einloggen</button>
+    <div class="mt-3 mb-3">
+            <a href="https://jetzt.aufstehen.de/page/user/forgot">Passwort vergessen?</a>
+          </div>
+      </form>
+      <div class="register">
+        <h1 class="h3 mb-3 font-weight-normal">Noch keinen Zugang?</h1>
+        <button class="btn btn-lg btn-danger btn-block" type="submit">Jetzt registrieren</button>
+      </div>
+    </div>
   </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      jQuery('.register button').click( function() { alert('Hier sollte ein Link zu einer "echten" Registrierungsseite führen (oder ein Overlay erscheinen)') });
+    </script>
   </body>
 </html>
