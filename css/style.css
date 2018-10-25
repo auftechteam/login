@@ -29,6 +29,9 @@ body {
 .register {
   padding: 15px;
 }
+.register a:hover {
+  text-decoration: none;
+}
 .form-signin {
   width: 100%;
   max-width: 330px;
